@@ -8,6 +8,11 @@ export default class AutoTypographyPlugin extends Plugin {
 
         // Go through all text nodes in the rendered HTML
         while ((currentNode = treeWalker.nextNode())) {
+            // Skip anything inside code blocks
+            if (currentNode.parentElement?.closest("code") != null) {
+                continue;
+            }
+
             let t = currentNode.textContent!;
 
             // convert triple hyphens to em-dash

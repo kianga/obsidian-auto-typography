@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-auto-typography",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Obsidian plugin that converts ASCII to Unicode typography",
 	"homepage": "https://github.com/kianga/obsidian-auto-typography",
 	"bugs": "https://github.com/kianga/obsidian-auto-typography/issues",
